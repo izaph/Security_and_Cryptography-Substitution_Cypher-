@@ -1,6 +1,6 @@
 # Substitution Cipher
 
-To make this substitution ciper I used a Python based command line application and Visual Studio Code as IDE. It is made to encrypt and/or decrypt any file by mapping its 8-bit ASCII characters to a randomized alternative set. Using "generate_test.py" one can create a text file (around 13KB) containing Lorem ipsum. I used it for testing the code, but any text file can be used with this code. 
+To make this substitution cipher I used a Python based command line application and Visual Studio Code as IDE. It is made to encrypt and/or decrypt any file by mapping its 8-bit ASCII characters to a randomized alternative set. Using "generate_test.py" one can create a text file (around 13KB) containing Lorem ipsum. I used it for testing the code, but any text file can be used with this code. 
 
 
 ## Implementation Approach
@@ -29,9 +29,12 @@ To make this substitution ciper I used a Python based command line application a
 
 ### Example 
 
-I used "genereate_test.py" to generate a .txt file containing 40 paragraphs of Lorem ipsum (around 13KB). After running the following comand lines:
+I used "generate_test.py" to generate a .txt file containing 40 paragraphs of Lorem ipsum (around 13KB). After running the following command lines:
+
     python generate_test.py
+    
     python cipher.py -e test_input.txt -o encrypted.bin
+    
     python cipher.py -d encrypted.bin -o decrypted.txt
 
 I ended up having the following files: test_input.txt (the file used for encrypting and decrypting), encrypted.bin (the encrypted file) and decrypted.txt (the decrypted file). You can see them attached
